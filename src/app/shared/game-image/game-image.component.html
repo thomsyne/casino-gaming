@@ -1,0 +1,15 @@
+<div class="game-img">
+  <img class="main-image" [src]=" 'https:' + imageData?.image" >
+  
+  <img *ngIf="isImageTop" class="top-ribbon" src="../../../assets/img/top-ribbon.png" />
+  <img *ngIf="isImageNew" class="new-ribbon" src="../../../assets/img/new-ribbon.png" />
+  
+  <div class="button-wrapper">
+    <div class="button">Play</div>
+    <p>{{imageData?.name}}</p>
+  </div>
+
+  <div *ngIf="imageData?.isJackPot" class="jackpot-wrapper">
+  </div>
+  <p class="jackpot-amount" *ngIf="imageData?.isJackPot" >£{{imageData?.amount || 0}}</p>
+</div>
