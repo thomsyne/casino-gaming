@@ -1,3 +1,3 @@
-export const allGamesUrl = 'http://stage.whgstage.com/front-end-test/games.php';
+export const allGamesUrl = 'https://stage.whgstage.com/front-end-test/games.php';
 
-export const jackpotUrl = 'http://stage.whgstage.com/front-end-test/jackpots.php'
+export const jackpotUrl = 'https://stage.whgstage.com/front-end-test/jackpots.php'
